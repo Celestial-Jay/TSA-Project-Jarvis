@@ -15,7 +15,7 @@ Jarvis is a voice personal assistant built to reduce the accessibility barrier f
 - Speaks the current time when asked
 - Opens websites by name ("open youtube")
 - Searches and reads Wikipedia summaries
-- Answers general questions using a locally-run AI model (Ollama / Gemma 3)
+- Answers general questions using a locally-run AI model (Ollama / Gemma 4)
 - All responses are spoken aloud via text-to-speech
 
 ---
@@ -25,7 +25,7 @@ Jarvis is a voice personal assistant built to reduce the accessibility barrier f
 - `SpeechRecognition` — converts spoken audio to text via Google's API
 - `pyttsx3` — offline text-to-speech engine
 - `PyAudio` — microphone input
-- `Ollama` with `gemma3:1b` — local AI model for general question answering
+- `Ollama` with `gemma4:e2b` — local AI model for general question answering
 - `wikipedia` — article summarization
 - `webbrowser` / `datetime` — built-in Python standard library utilities
 
@@ -33,10 +33,10 @@ Jarvis is a voice personal assistant built to reduce the accessibility barrier f
 
 ## How to Run
 
-Prerequisites: Python 3.9+, and [Ollama](https://ollama.com) installed and running locally with the gemma3:1b model pulled.
+Prerequisites: Python 3.9+, and [Ollama](https://ollama.com) installed and running locally with the gemma4:e2b model pulled.
 
 ```bash
-ollama pull gemma3:1b
+ollama pull gemma4:e2b
 ```
 
 ```bash
