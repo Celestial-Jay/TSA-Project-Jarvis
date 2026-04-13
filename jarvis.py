@@ -102,7 +102,7 @@ def ollama_call(command):
     
     try:
         response = chat(
-            model='gemma3:1b',
+            model='gemma4:e2b',
             messages=[{'role': 'user', 'content': f'{command}'}],
         )
         
